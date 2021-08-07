@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap')
+
+$violet: hsl(257, 40%, 49%)    
+$magenta: hsl(300, 69%, 71%)
+
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+
+body   
+    font-family: 'Open Sans', sans-serif
+    height: 100vh
+    background: url("./images/bg-desktop.svg") center no-repeat
+    background-size: cover
+    background-color: $violet
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 14px
+    color: white
+    line-height: 1.6
+    overflow: hidden
+
+h1
+    font-family: 'Poppins', sans-serif 
+
+a
+    text-decoration: none
+    color: $violet
+    background-color: #fff
+    padding: 8px 70px 8px 70px
+    border-radius: 60px
+    justify-content: center
+
+i
+    color: white
+    border: solid white 1px
+    border-radius: 100px
+    padding: 10px
+
+i:active, i:hover
+    color: $magenta
+    border: solid $magenta 1px
+
+a:active, a:hover 
+    background-color: $magenta
+    color: white
+
+.container
+    margin: 50px
+    width: 80%
+
+.header > img 
+    width: 200px   
+    margin-bottom: 50px
+
+.main
+    display: flex
+    flex-direction: row
+
+.main > img
+    width: 50%
+
+.content
+    width: 50% 
+    margin-left: 50px    
+
+p
+    margin: 30px 0px 30px 0px
+    word-spacing: 1px
+
+.footer
+    float: right
+    margin-top: 50px
+
+.fb
+    border-radius: 100px    
+    padding: 10px 13.5px 10px 13.5px
+
+.i2
+    margin: 0px 15px 0px 15px    
+
+@media (max-width: 700px)
+    body
+        height: 100%
+        overflow: auto
+        display: flex
+        justify-content: center
+        align-items: center
+        background: url("./images/bg-mobile.svg") top left no-repeat
+        background-color: $violet
+
+    .container
+        margin: 50px 30px 50px 30px
+
+    .header > img 
+        width: 120px
+
+    .main
+        display: flex
+        flex-direction: column
+        width: auto
+
+    .main > img
+        width: 100%
+
+    .content
+        margin: 50px 0px 20px 0px
+        text-align: center 
+        width: auto
+
+    .footer
+        float: none
+        display: flex
+        justify-content: center
